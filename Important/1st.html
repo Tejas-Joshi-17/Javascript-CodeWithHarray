@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Button{
+            width: 100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    Click on Button :- 
+    <input type="button" value="Apple" placeholder="Please Click on Me" id="Button" onclick="Onclick_Function(this)">
+    <input type="button" value="Banana" placeholder="Please Click on Me" id="Button" onclick="Onclick_Function(this)">
+    
+    <script>
+        let Onclick_Function = (target) =>{
+            target.style.backgroundColor = "orange"
+        }
+    </script>
+</body>
+</html>

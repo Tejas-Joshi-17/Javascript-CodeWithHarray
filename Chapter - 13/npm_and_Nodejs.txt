@@ -1,0 +1,4 @@
+1) npm init   :-  To Create Project
+2) node install <Package_Name>  :-  Install package 
+3) Delete "node_modules" folder
+4) npm install   :-  Regain deleted "node_modules" folder

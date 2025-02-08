@@ -1,0 +1,6 @@
+4 Pillers of Object-Oriented Programming :- 
+
+1) Abstraction
+2) Encapsulation
+3) Inheritence
+4) Polymorphism  :- Phone can br Camrea, Radio, etc at same time
