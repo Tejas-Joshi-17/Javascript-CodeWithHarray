@@ -6,16 +6,16 @@
 //      key = 2        value = 21
 //      key = 3        value = true
 
-let object_name = {
-    Name : "Tejas",
-    Surame : "Joshi",
-    Age : 21,
-    Male : true,
-    Contact_No : 8485835616
+let objectName = {
+    name : "Tejas",
+    surname : "Joshi",
+    age : 21,
+    male : true,
+    contactNo : 8485835616
 };
 
-for(let key in object_name){
-    console.log(key + " :- " + object_name[key]); 
+for(let key in objectName){
+    console.log(`${key} :- ${objectName[key]}`); 
 }
 // Name :- Tejas
 // Surame :- Joshi
@@ -25,10 +25,10 @@ for(let key in object_name){
 
 
 
-let Array_Name = [10,"20",99.99,null,true,false];
+let arrayName = [10, "20", 99.99, null, true, false];
 
-for(let key in Array_Name){
-        console.log(key + " :- " + Array_Name[key]); 
+for(let key in arrayName){
+    console.log(`${key} :- ${arrayName[key]}`); 
 }
 // 0 :- 10
 // 1 :- 20
@@ -39,9 +39,9 @@ for(let key in Array_Name){
 
 
 
-let Pame = "Tejas Joshi"
-for(let key in Pame){
-        console.log(key + " :- " + Pame[key]); 
+let pame = "Tejas Joshi"
+for(let key in pame){
+    console.log(`${key} :- ${pame[key]}`); 
 }
 
 // 0 :- T
@@ -70,8 +70,8 @@ for(let key in Pame){
 
 // 2) for-of loop  <---- used in array
 
-let arr = [10,"20",99.99,null,true,false];
-for( a of arr){
+let arr = [10, "20", 99.99, null, true, false];
+for( a of arr ){
     console.log(a);
 }
 // 10
@@ -82,8 +82,8 @@ for( a of arr){
 // false
 
 
-let Name = "Tejas Joshi"
-for(x of Name){
+let fullName = "Tejas Joshi"
+for(x of fullName){
     console.log(x)
 }
 // T

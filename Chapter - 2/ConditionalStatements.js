@@ -11,6 +11,3 @@ b = Number.parseInt(b);
 console.log(typeof b);  // number
 console.log(b);         // 45
 // What is your Age? 45
-
-
-

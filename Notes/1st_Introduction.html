@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Introduction</title>
+</head>
+
+<body>
+
+    <h2 id="htmlContent">Javascript can change HTML content</h2>
+    <button onclick="changeHTMLContent()">Change HTML Content</button>
+
+    <h2 id="htmlAttribute">Javascript can change HTML Attribute Value</h2>
+    <button onclick="turnBulbOn()">Turn on the On</button>
+    <img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="">
+    <button onclick="turnBulbOff()">Turn on the Off</button>
+
+    <p id="htmlElement" style="font-size: 20px;">JavaScript can change the style of an HTML element.</p>
+    <button onclick="changeHTMLElement()">Change HTML Element</button>
+
+    <hr>
+    <p id="hideHtmlElement">JavaScript can hide an HTML element.</p>
+    <button onclick="hideHTMLElement()">Hide HTML Element</button>
+
+    <script>
+        let changeHTMLContent = () => htmlContent.innerHTML = `Hello Javascript!`;
+
+        let turnBulbOn = () => bulb.src = `https://www.w3schools.com/js/pic_bulbon.gif`
+
+        let turnBulbOff = () => bulb.src = `https://www.w3schools.com/js/pic_bulboff.gif`
+
+        let changeHTMLElement = () =>
+            htmlElement.style.fontSize === `20px` ? htmlElement.style.fontSize = `35px` : htmlElement.style.fontSize = `20px`
+
+        let hideHTMLElement = () => hideHtmlElement.style.display === `none` ? hideHtmlElement.style.display = `block` : hideHtmlElement.style.display = `none`   
+    </script>
+    
+</body>
+
+</html>
