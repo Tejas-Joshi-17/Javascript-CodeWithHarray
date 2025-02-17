@@ -1,4 +1,4 @@
-let x = Number.parseInt(x); // converting string to number
+let x = Number.parseInt(x);         // converting string to number
 
 let a = prompt("What is your name?");
 console.log(typeof a);  // string

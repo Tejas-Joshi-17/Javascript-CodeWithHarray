@@ -1,0 +1,34 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+What is a Variable :- 
+
+    A Variable is a container that stores a value.
+    This is very similar to the container used to store rice, water, etc.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Rules for chossing Variable Name :- 
+
+    1) Letter, Digits, Underscrores & '$' Sign Allowed.
+    2) Must begin with $, _ OR letter.
+    3) JavaScript Reserved words cannot be used as a Variable Name.
+    4) Javascript is Case-Sensitive Language.
+        E.X. :-  Harry & harry are two different variables.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+var VS let VS const :-  
+
+1) var :-   Global Scope.
+            Updation & Redeclaration both possible.
+            By-default initalize with "undefined".
+
+2) let :-   Block Scope.
+            Updation possible but Redeclaration not possible.
+            By-default initalize with "undefined".
+
+3) const :- Block Scope
+            Updation & Redeclaration both NOT possible
+             Must be initialize at the time of declaration else  Error Occurs
+             
+-----------------------------------------------------------------------------------------------------------------------------------------------------

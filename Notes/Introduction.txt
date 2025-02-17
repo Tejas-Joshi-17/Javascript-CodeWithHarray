@@ -1,0 +1,6 @@
+What is Javascript :- 
+    1) JavaScript is the programming language of the web.
+    2) It can update and change both HTML and CSS.
+    3) It can calculate, manipulate and validate data.
+
+Note :- 

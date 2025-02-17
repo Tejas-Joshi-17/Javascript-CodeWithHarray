@@ -1,0 +1,50 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1) Arithmetic Operators :- 
+
+    +   =   Addition
+    -   =   Subtraction
+    *   =   Multiplication
+    **  =   Expponentational
+    /   =   Division
+    %   =   Modulus
+    ++  =   Increment
+    --  =   Decrement
+
+2) Assignment Operators :- 
+
+    =   =   x = y     =  x = y
+    +=  =   x += y    =  x = x + y
+    -=  =   x -= y    =  x = x - y
+    *=  =   x *= y    =  x = x * y
+    /=  =   x /= y    =  x = x / y
+    %=  =   x %= y    =  x = x % y
+    **= =   x **= y   =  x = x ** y
+
+
+3) Comparison Operators :- 
+
+    ==   =   Equal Values (Not Check DataType)
+    !=   =   Not Equal
+    ===  =   Equal Values & Equal DataType (Check DataType)
+    !==  =   Not Equal Value OR Not Equal DataType
+    >    =   Greater Than
+    <    =   Less Than
+    >=   =   Greather Than OR Equal To
+    <=   =   Less Than OR Equal To
+    ?    =   Ternary Operator
+
+4) Logical Operators :- 
+
+    &&   =   Logical AND
+    ||   =   Logical OR
+    !    =   Logical NOT
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Comments in Javascript :- 
+
+1) Single-Line Comment  :-   // 
+2) Multi-Line Comments  :-   /*   */
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -32,7 +32,7 @@ console.log(a);         // Joshi
 var t = 45;
 console.log(t);                 // 45
 {
-    var t = "Tejas Joshi";
+    var t = "Tejas Joshi";      // <--- Global Scoped
     console.log(t);             // Tejas Joshi
 }
 console.log(t);                 // Tejas Joshi
@@ -68,7 +68,7 @@ console.log(w);                 // 23
 let y = 456;
 console.log(y);                 // 456
 {
-    let y = 23;
+    let y = 23;                 // <--- Blocked Scope
     console.log(y);             // 23
 }
 console.log(y);                 // 456
@@ -107,7 +107,7 @@ console.log(r);             // 456
 const s = 456;
 console.log(s);             // 456
 {
-    const s = 23;
+    const s = 23;           // <--- Blocked Scope that's why possible
     console.log(s);         // 23
 }
 console.log(s);             // 456

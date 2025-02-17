@@ -1,14 +1,14 @@
-const object_name = {
-    firstName:"John", 
-    lastName:"Doe", 
-    age:50, 
+const objectName = {
+    firstName: "John", 
+    lastName: "Doe", 
+    age: 50, 
     male : "true",
-    eyeColor:"blue"
+    eyeColor: "blue"
 };
 
-console.log(typeof object_name); // object
+console.log(typeof objectName); // object
 
-console.log(object_name);
+console.log(objectName);
 // {
 //     firstName: 'John',
 //     lastName: 'Doe',
@@ -17,18 +17,18 @@ console.log(object_name);
 //     eyeColor: 'blue'
 //   }
 
-console.log(object_name.firstName);  // John
-console.log(object_name.lastName);   // Doe
-console.log(object_name.age);        // 50
-console.log(object_name.male);       // true
-console.log(object_name.eyeColor);   // blue
+console.log(objectName.firstName);  // John
+console.log(objectName.lastName);   // Doe
+console.log(objectName.age);        // 50
+console.log(objectName.male);       // true
+console.log(objectName.eyeColor);   // blue
 
-console.log(Object.keys(object_name).length);    // 5
+console.log(Object.keys(objectName).length);    // 5
 // Gives length of object
 
 
-for(let i=0;i<Object.keys(object_name).length;i++){
-    console.log(Object.keys(object_name)[i] + " :- " + object_name[Object.keys(object_name)[i]]);
+for(let i=0; i<Object.keys(objectName).length; i++){
+    console.log(Object.keys(objectName)[i] + " :- " + objectName[Object.keys(objectName)[i]]);
 }
 // firstName :- John
 // lastName :- Doe
@@ -38,8 +38,8 @@ for(let i=0;i<Object.keys(object_name).length;i++){
 
 
 
-for(key in object_name){
-    console.log(key + " is :- " + object_name[key]);
+for(key in objectName){
+    console.log(key + " is :- " + objectName[key]);
 }
 // firstName is :- John
 // lastName is :- Doe
@@ -56,10 +56,10 @@ for(key in object_name){
 
 const abc = {
     name : "Tejas",
-    Surname : "Joshi",
-    Age : 21,
-    Male : true,
-    contact_no : undefined
+    surname : "Joshi",
+    age : 21,
+    male : true,
+    contactNo : undefined
 }
 
 // abc = 45    // <---- Error Assignment to constant variable.
@@ -68,10 +68,10 @@ const abc = {
 
 var xyz = {
     name : "Tejas",
-    Surname : "Joshi",
-    Age : 21,
-    Male : true,
-    contact_no : undefined
+    surname : "Joshi",
+    age : 21,
+    male : true,
+    contactNo : undefined
 }
 console.log(typeof xyz);    // Object
 
@@ -84,10 +84,10 @@ console.log(typeof xyz);    // number
 
 var pqr = {
     name : "Tejas",
-    Surname : "Joshi",
-    Age : 21,
-    Male : true,
-    contact_no : undefined
+    surname : "Joshi",
+    age : 21,
+    male : true,
+    contactNo : undefined
 }
 console.log(typeof pqr);    // Object
 
@@ -101,42 +101,42 @@ console.log(typeof pqr);    // number
 // ----2) We can add data & modify data present in object
 
 const K = {
-    Name : "Tejas",
-    Surname : "Joshi",
-    Age : 21,
-    Contact_No : 8485835616
+    name : "Tejas",
+    surname : "Joshi",
+    age : 21,
+    contactNo : 8485835616
 }
 
 for(key in K){
     console.log(key + " is :- " + K[key]);
 }
-// Name is :- Tejas
-// Surname is :- Joshi
-// Age is :- 21
-// Contact_No is :- 8485835616
+// name is :- Tejas
+// surname is :- Joshi
+// age is :- 21
+// contactNo is :- 8485835616
 
 // ********* Add Data in Object *******
-K['Father_Name'] = "Dattataray"
+K['fatherName'] = "Dattataray"
 
 for(key in K){
     console.log(key + " is :- " + K[key]);
 }
-// Name is :- Tejas
-// Surname is :- Joshi
-// Age is :- 21
-// Contact_No is :- 8485835616
-// Father_Name is :- Dattataray
+// name is :- Tejas
+// surname is :- Joshi
+// age is :- 21
+// contactNo is :- 8485835616
+// fatherName is :- Dattataray
 
 
 
 // ********* Modify Data in Object *******
-K['Age'] = 98
+K['age'] = 98
 
 for(key in K){
     console.log(key + " is :- " + K[key]);
 }
-// Name is :- Tejas
-// Surname is :- Joshi
-// Age is :- 98
-// Contact_No is :- 8485835616
-// Father_Name is :- Dattataray
+// name is :- Tejas
+// surname is :- Joshi
+// age is :- 98
+// contactNo is :- 8485835616
+// fatherName is :- Dattataray
