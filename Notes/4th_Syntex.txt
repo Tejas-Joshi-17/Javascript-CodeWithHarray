@@ -1,0 +1,30 @@
+----------------------------------------------------------------------------------------------------------------------------------------
+
+JavaScript Identifiers / Names :-  
+
+    1) Identifiers are used to name variables and keywords, and functions.
+    2) A JavaScript name must begin with :-  
+        - A letter (A-Z or a-z)
+        - A dollar sign ($)
+        - Or an underscore (_)
+        Subsequent characters may be letters, digits, underscores, or dollar signs.
+    3) Numbers are not allowed as the first character in names.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Note :-   
+
+    1) All JavaScript Identifiers are Case-Sensitive.
+        - The variables lastName and lastname, are two different variables:
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Ways to Joining Multiple Words :-  
+
+    1) Hyphens (Not Allowed) :-  first-name, last-name, master-card, inter-city, etc.
+            - Hyphens are Not Allowed in Javascript. They are Reserved for Subtraction.
+    2) Underscores (Not Recommended) :-  first_name, last_name, master_name, inter_city.
+    3) PascalCase (For FileName) :-   FirstName, LastName, MasterName, inter_city.
+    4) camelCase (For methods, variable) :- firstName, lastName, masterCard, interCity.
+
+----------------------------------------------------------------------------------------------------------------------------------------
