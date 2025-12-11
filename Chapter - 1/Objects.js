@@ -27,8 +27,8 @@ console.log(Object.keys(objectName).length);    // 5
 // Gives length of object
 
 
-for(let i=0; i<Object.keys(objectName).length; i++){
-    console.log(Object.keys(objectName)[i] + " :- " + objectName[Object.keys(objectName)[i]]);
+for(const element of Object.keys(objectName)){
+    console.log(`${element} :- ${objectName[element]}`);
 }
 // firstName :- John
 // lastName :- Doe
@@ -38,7 +38,7 @@ for(let i=0; i<Object.keys(objectName).length; i++){
 
 
 
-for(key in objectName){
+for(let key in objectName){
     console.log(key + " is :- " + objectName[key]);
 }
 // firstName is :- John
@@ -107,7 +107,7 @@ const K = {
     contactNo : 8485835616
 }
 
-for(key in K){
+for(let key in K){
     console.log(key + " is :- " + K[key]);
 }
 // name is :- Tejas
@@ -118,7 +118,7 @@ for(key in K){
 // ********* Add Data in Object *******
 K['fatherName'] = "Dattataray"
 
-for(key in K){
+for(let key in K){
     console.log(key + " is :- " + K[key]);
 }
 // name is :- Tejas
@@ -132,7 +132,7 @@ for(key in K){
 // ********* Modify Data in Object *******
 K['age'] = 98
 
-for(key in K){
+for(let key in K){
     console.log(key + " is :- " + K[key]);
 }
 // name is :- Tejas

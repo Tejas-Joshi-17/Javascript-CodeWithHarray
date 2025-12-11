@@ -29,15 +29,16 @@ const a = async (text, n = 2) => {
 
 // 2) Write a Javascript Program to find Average of numbers in an Array using Spread Operator
 
-function Total_Sum(){
+function totalSum(){
     let Sum = 0;
-    for(let i=0; i<arguments.length; i++){
-        Sum += arguments[i]
+    for(const element of arguments){
+        Sum += element
     }
+    return Sum;
 }
 
-console.log(Total_Sum(10,20,30,40))             // 100
-console.log(Total_Sum(10,20,30,40,50,60))      // 210
+console.log(totalSum(10,20,30,40))             // 100
+console.log(totalSum(10,20,30,40,50,60))       // 210
 
 
 // --------------------------------------------------------------------------------------------------------------------------------
@@ -73,11 +74,11 @@ console.log(Total_Sum(10,20,30,40,50,60))      // 210
 
 // 4) Write a Simple Interest Calculator using Javascript
 
-let Simple_Interest = (p, r, t) =>{
+let simpleInterest = (p, r, t) =>{
     return (p * r * t) / 100;
 }
 
-let SimpleInterest = Simple_Interest(100, 5, 1)
+let SimpleInterest = simpleInterest(100, 5, 1)
 console.log(`Simple Interest is :- ${SimpleInterest}\nPrincipal Amount :- 100\nRate of Interest :- 5\nTime Duration :- 1`)
 // Simple Interest is :- 5
 // Principal Amount :- 100

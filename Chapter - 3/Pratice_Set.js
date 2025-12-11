@@ -2,13 +2,13 @@
 
 const printer = (X) =>{
     for (let key in X){
-        console.log(key + " is:- "+ X[key])
+        console.log(`${key} is:- ${X[key]}`) // Template Literals
     }
 }
 
 let PrinTer = (X) => {
-    for(let i=0;i<Object.keys(X).length;i++){
-        console.log(Object.keys(X)[i] + " :- " + X[Object.keys(X)[i]]);
+    for(const element of Object.keys(X)){
+        console.log(`${element} is:- ${X[element]}`) // Template Literals;
     }
 }
 

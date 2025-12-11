@@ -71,7 +71,7 @@ for(let key in pame){
 // 2) for-of loop  <---- used in array
 
 let arr = [10, "20", 99.99, null, true, false];
-for( a of arr ){
+for(let a of arr ){
     console.log(a);
 }
 // 10
@@ -83,7 +83,7 @@ for( a of arr ){
 
 
 let fullName = "Tejas Joshi"
-for(x of fullName){
+for(let x of fullName){
     console.log(x)
 }
 // T

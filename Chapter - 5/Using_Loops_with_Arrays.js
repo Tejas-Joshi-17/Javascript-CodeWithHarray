@@ -3,8 +3,8 @@
 let Array = [1,'w',"Tejas",true,false,null,34.32]
 
 console.log("Array Array contains :- " + " ")
-for(let i=0;i<Array.length;i++){
-        console.log(Array[i] + " ")
+for(const element of Array){
+        console.log(element + " ")
 }
 // Array Array contains :-
 // 1

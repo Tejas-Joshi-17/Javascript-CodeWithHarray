@@ -1,14 +1,14 @@
 
 // 1) string[i] <--- Gives Character present at index 'i' in string 
 
-let Aircreaft = `Tejas Joshi`
-console.log(Aircreaft[0])    // T
-console.log(Aircreaft[1])    // e
-console.log(Aircreaft[2])    // j
-console.log(Aircreaft[4])    // s
-console.log(Aircreaft[5])    // 
-console.log(Aircreaft[6])    // J
-console.log(Aircreaft[7])    // s
+let airCraft = `Tejas Joshi`
+console.log(airCraft[0])    // T
+console.log(airCraft[1])    // e
+console.log(airCraft[2])    // j
+console.log(airCraft[4])    // s
+console.log(airCraft[5])    // 
+console.log(airCraft[6])    // J
+console.log(airCraft[7])    // s
 
 
 
@@ -16,23 +16,23 @@ console.log(Aircreaft[7])    // s
 
 // 2) string.length <---- Gives length of the string
 
-let Name = `Tejas Joshi`
-console.log(Name.length)    // 11
+let profileName = `Tejas Joshi`
+console.log(profileName.length)    // 11
 
 
 
 
 // 3) string.toUpperCase() <---- return string converted to UpperCase
 
-let Full_Name = `Tejas Joshi`
-console.log(Full_Name.toUpperCase())    // TEJAS JOSHI
+let fullName = `Tejas Joshi`
+console.log(fullName.toUpperCase())    // TEJAS JOSHI
 
 
 
 // 4) string.toLowerCase() <---- return string converted to LowerCase
 
-let Surname = `Tejas Joshi`
-console.log(Surname.toLowerCase())    // tejas joshi
+let surName = `Tejas Joshi`
+console.log(surName.toLowerCase())    // tejas joshi
 
 
 
@@ -61,10 +61,10 @@ console.log(GTA.replace("Tejas","Aakash"))    // Aakash Joshi
 
 // 7) string concatination
 
-let Nav_name = `Tejas `
-let Mid_Name = `Dattatray `
-let Sur_name = `Joshi`
-let Full_nav = Nav_name + Mid_Name + Sur_name
+let navName = `Tejas `
+let midName = `Dattatray `
+let sureName = `Joshi`
+let Full_nav = navName + midName + sureName
 console.log(Full_nav)   // Tejas Dattatray Joshi
 
 

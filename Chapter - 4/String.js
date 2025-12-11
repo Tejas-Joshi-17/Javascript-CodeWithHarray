@@ -38,6 +38,6 @@ console.log(shortName[7])    // s
 
 // string is immutable i.e. we cannot change the string
 
-let Game = "GTA Vice City"
-// Game[2] = 'R'   <--- Cannot modify 'A' with 'R'
-console.log(Game)
+let game = "GTA Vice City"
+// game[2] = 'R'   <--- Cannot modify 'A' with 'R'
+console.log(game)

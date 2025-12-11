@@ -25,7 +25,7 @@ const abc = {
     contactNo : undefined
 }
 
-// abc = 45    // Assignment to constant variable.
+// abc = 45    // Error :- Assignment to constant variable.
 
 
 var xyz = {

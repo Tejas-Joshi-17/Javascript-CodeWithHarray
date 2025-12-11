@@ -1,9 +1,9 @@
 // -----------------------------------------------------------------------------------------------------------------------------
 
 
-let Func_1 = () => console.log(`First Statement\n Tejas Joshi`)
+let fun1 = () => console.log(`First Statement\n Tejas Joshi`)
 
-Func_1() 
+fun1() 
 // First Statement
 //  Tejas Joshi
 
@@ -11,9 +11,9 @@ Func_1()
 // -----------------------------------------------------------------------------------------------------------------------------
 
 
-let Func_2 = Name => console.log(`Respected Sir/Mam,\n  ${Name}`)
+let fun2 = Name => console.log(`Respected Sir/Mam,\n  ${Name}`)
 
-Func_2("Tejas Joshi")
+fun2("Tejas Joshi")
 // Respected Sir/Mam,
 //   Tejas Joshi
 
@@ -21,18 +21,18 @@ Func_2("Tejas Joshi")
 // -----------------------------------------------------------------------------------------------------------------------------
 
 
-let Func_3 = {
-    Name : "Tejas Joshi",
-    Role : "Software Develper",
-    Show_Details : function(){
+let fun3 = {
+    name : "Tejas Joshi",
+    role : "Software Develper",
+    showDetails : function(){
         setTimeout(() => {
-            console.log(`Hi, My Name is :- ${this.Name}`)
-            console.log(`Hi, My Role is :- ${this.Role}`)
+            console.log(`Hi, My Name is :- ${this.name}`)
+            console.log(`Hi, My Role is :- ${this.role}`)
         }, 2000);
     }
 }
 
-Func_3.Show_Details()
+fun3.showDetails()
 // Hi, My Name is :- Tejas Joshi                <---- After 2 Seconds
 // Hi, My Role is :- Software Develper          <---- After 2 Seconds
 

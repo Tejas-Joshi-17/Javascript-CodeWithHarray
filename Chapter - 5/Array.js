@@ -64,7 +64,7 @@ for(let i=0;i<Name.length;i++){
 // Value at index 3 is:- Tejas
 // Value at index 4 is:- null
 
-for(key of Name){
+for(let key of Name){
     console.log(key)
 }
 // 7

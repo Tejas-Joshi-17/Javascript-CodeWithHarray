@@ -1,8 +1,8 @@
 // 1) arr.toString()    <<-- Convert an array to a string of comma separated values
 
-let Name = [1,true,null,undefined,"Tejas"]
+let Name = [1, true, null, undefined, "Tejas"]
 let a = Name.toString();
-console.log(a + " " + typeof a)  // 1,true,,,Tejas  string
+console.log(`${a} ${typeof a}`)  // 1,true,,,Tejas  string
 
 
 

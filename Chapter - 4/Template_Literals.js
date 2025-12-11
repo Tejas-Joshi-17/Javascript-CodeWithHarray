@@ -5,12 +5,12 @@
 
 //  ---->>> With Template Literals, it is possible to use both single & double quotes inside a string
 
-let Name = `Te'ja's  Jo"sh"i`
-console.log(Name)   // Te'ja's  Jo"sh"i
+let profileName = `Te'ja's  Jo"sh"i`
+console.log(profileName)   // Te'ja's  Jo"sh"i
 
 
 // ----->>>> We can insert variables directly in template literal. This is called string interpolation
 
-let Full_Name = `Tejas Joshi`
-let Address = `My Name is :- ${Full_Name}`
-console.log(Address)    // My Name is :- Tejas Joshi
+let fullName = `Tejas Joshi`
+let address = `My Name is :- ${fullName}`
+console.log(address)    // My Name is :- Tejas Joshi

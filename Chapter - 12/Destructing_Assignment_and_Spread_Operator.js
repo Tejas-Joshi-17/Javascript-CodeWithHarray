@@ -30,10 +30,10 @@ console.log(`The Value of CGPA is :- ${CGPA}`)         // The Value of CGPA is :
 // Note :- "arguments" is available only in regular function not in Arrow Function.
 
 
-function Total_Sum(){
+function totalSum(){
     let Sum = 0;
-    for(let i=0; i<arguments.length; i++){
-        Sum += arguments[i]
+    for(const element of arguments){
+        Sum += element
     }
     
     console.log(arguments)                                          // [Arguments] { '0': 10, '1': 20, '2': 30, '3': 40 }
@@ -43,8 +43,8 @@ function Total_Sum(){
     return Sum;
 }
 
-console.log(Total_Sum(10,20,30,40))             // 100
-console.log(Total_Sum(10,20,30,40,50,60))      // 210
+console.log(totalSum(10,20,30,40))             // 100
+console.log(totalSum(10,20,30,40,50,60))      // 210
 
 
 
@@ -54,8 +54,8 @@ console.log(Total_Sum(10,20,30,40,50,60))      // 210
 
 function Multiplication(First_Name, Last_Name, ...args){
     let Mul = 1;
-    for(let i=0; i<args.length; i++){
-        Mul *= args[i]
+    for(const element of args){
+        Mul *= element
     }
     
     console.log("args is :- " + args)                           // args is :- 1,2,3,4,5
@@ -74,8 +74,8 @@ console.log(`Multiplications is :- ${Multiplication("Tejas","Joshi",1,2,3,4,5)}`
 
 function Sum(First_Name, Last_Name, ...args){
     let Sum = 0;
-    for(let i=0; i<args.length; i++){
-        Sum += args[i];
+    for(const element of args){
+        Sum += element;
     }
 
     console.log("args is :- " + args)                       // args is :- 1,2,3,4,5
@@ -93,8 +93,8 @@ console.log("Total Sum :- " + Sum("Tejas","Joshi", arr_1))      // Total Sum :- 
 
 function Sum(First_Name, Last_Name, ...args){
     let Sum = 0;
-    for(let i=0; i<args.length; i++){
-        Sum += args[i];
+    for(const element of args){
+        Sum += element;
     }
 
     console.log("args is :- " + args)                       // args is :- 1,2,3,4,5
