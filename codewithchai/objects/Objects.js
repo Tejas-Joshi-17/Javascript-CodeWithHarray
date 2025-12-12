@@ -1,46 +1,78 @@
-const hobbies = Symbol("hobbies");
+// ------------------------------------------------------ var Object ------------------------------------------------------
 
-const testObject = {
-    "name" : 'Tejas Joshi',
-    age : 21,
-    isStudent : true,
-    [hobbies] : 'Reading',              // symbolic key
-    "skills" : ['JavaScript', 'HTML', 'CSS', 'ReactJS'],
-    "address" : {
-        "street" : '123 Main St',
-        "city" : 'Anytown',
-        "state" : 'CA',
-        zip : '12345'
+// Creating an object with various property types
+var sampleObject = {
+    name: "Chai",
+    age: 5,
+    isStudent: false,
+    hobbies: ["reading", "gaming", "coding"],
+    address: {
+        street: "123 Main St",
+        city: "Techville",
+        zipCode: "12345"
+    },
+    greet: function() {
+        return "Hello, my name is " + this.name;
     }
-}
-
-console.log(testObject.name);           // Tejas Joshi
-console.log(testObject['name']);        // Tejas Joshi
-
-console.log(testObject.age);            // 21
-console.log(testObject['age']);         // 21
-
-console.log(testObject.isStudent);      // true
-console.log(testObject['isStudent']);   // true
-
-console.log(testObject.skills);         // [ 'JavaScript', 'HTML', 'CSS', 'ReactJS' ]
-console.log(testObject['skills']);      // [ 'JavaScript', 'HTML', 'CSS', 'ReactJS' ]
-
-console.log(testObject.address);        // { street: '123 Main St', city: 'Anytown', state: 'CA', zip: '12345' }
-console.log(testObject['address']);     // { street: '123 Main St', city: 'Anytown', state: 'CA', zip: '12345' }
-
-console.log(testObject.address.city);           // Anytown
-console.log(testObject['address']['city']);     // Anytown
-
-console.log(testObject[hobbies]);               // Reading
+};
 
 
 // Adding a new property to the object
-testObject.greeting = function() {
-    return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
-}
+sampleObject.school = "Code Academy";
 
-console.log(testObject.greeting());   // Hello, my name is Tejas Joshi and I am 21 years old!
+console.log(sampleObject.school);             // Code Academy
+console.log(sampleObject['school']);          // Code Academy
 
-console.log(...testObject.skills);       // JavaScript HTML CSS ReactJS
-console.log({...testObject.address});    // { street: '123 Main St', city: 'Anytown', state: 'CA', zip: '12345' }
+// Using spread operator to copy properties
+const copiedAddress = { ...sampleObject.address };
+console.log(copiedAddress);                   // { street: '123 Main St', city: 'Techville', zipCode: '12345' }
+
+const hobbiesList = [...sampleObject.hobbies];
+console.log(hobbiesList);                     // <div class="hobby">reading</div><div class="hobby">gaming</div><div class="hobby">coding</div>
+
+sampleObject = 12;
+console.log(sampleObject);                    // 12
+
+
+// ------------------------------------------------------ let Object ------------------------------------------------------
+
+let anotherObject = {
+    title: "Developer",
+    experience: 3,
+    skills: ["JavaScript", "React", "Node.js"],
+    getProfile: function() {
+        return `${this.title} with ${this.experience} years of experience.`;
+    }
+};
+
+// Modifying a property of the object
+anotherObject.experience = 4;
+
+console.log(anotherObject.getProfile());      // Developer with 4 years of experience.
+
+anotherObject = "Changed Value";
+console.log(anotherObject);                   // Changed Value
+
+
+
+// ------------------------------------------------------ const Object ------------------------------------------------------
+
+const constantObject = {
+    brand: "TechBrand",
+    model: "X1000",
+    features: ["Bluetooth", "WiFi", "GPS"],
+    getDetails: function() {
+        return `${this.brand} ${this.model} with features: ${this.features.join(", ")}`;
+    }
+};
+
+
+// Modifying properties of the constant object is allowed
+constantObject.model = "X2000";
+constantObject.features.push("NFC");
+console.log(constantObject.getDetails());     // TechBrand X2000 with features: Bluetooth, WiFi, GPS, <NFC></NFC>
+
+// Attempting to reassign the constant object will result in an error
+// constantObject = {}; // Uncommenting this line will throw a TypeError
+
+// ----------------------------------------------------------------------------------------------------------------------------
