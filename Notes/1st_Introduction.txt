@@ -8,8 +8,11 @@ What is Javascript :-
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 Note :- 
-    1) JavaScript and Java are completely different languages, both in concept and design.
-    2) JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
-    3) ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
+    1) JavaScript accepts both double and single quotes.
+        - document.getElementById("demo").innerHTML = "Hello JavaScript";
+        - document.getElementById('demo').innerHTML = 'Hello JavaScript';
+    2) JavaScript and Java are completely different languages, both in concept and design.
+    3) JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+    4) ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
     
 ----------------------------------------------------------------------------------------------------------------------------------------

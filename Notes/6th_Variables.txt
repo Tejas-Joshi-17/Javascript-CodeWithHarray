@@ -1,0 +1,73 @@
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Javascript Variables :-  
+
+    1) var 
+    2) let 
+    3) const 
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Note :-  
+
+    1) It is considered good programming practice to always declare variables before use.
+    2) It's a good programming practice to declare all variables at the beginning of a script.
+    3) JavaScript identifiers are case-sensitive.
+       E.X. :-     var x & var X are two different variables
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+When to Use var, let, or const ? 
+
+    a) Always declare variables
+    b) Always use 'const' if the value should not be changed
+    c) Always use 'const' if the type should not be changed (Arrays and Objects)
+    d) Only use 'let' if you can't use 'const'
+    e) Only use 'var' if you MUST support old browsers.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+JavaScript Identifiers :- 
+
+    a) All JavaScript variables must be identified with unique names.
+    b) These unique names are called identifiers.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Value = undefined :-  
+
+    In computer programs, variables are often declared without a value. 
+    The value can be something that has to be calculated, or something that will be provided later, like user input.
+    A variable declared without a value will have the value undefined.
+
+    let carName;
+    console.log(carName);          <--- undefined
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Default Value :- 
+
+    1) var   =  undefined;
+    2) let   =  undefined
+    3) const =  'const' declarations must be initialized.
+
+let defaultLetVariable;
+var defaultVarVariable;
+// const defaultConstVariable;        <---- 'const' declarations must be initialized.
+
+console.log(`Default Let Variable is :- ${defaultLetVariable}`);    // undefined
+console.log(`Default Var Variable is :- ${defaultVarVariable}`);    // undefined
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Difference Between var, let and const
+
+  +---------+-------------------------+-------------+-----------+------------+----------------+
+  |         |  Scope	              |  Redeclare	|  Reassign	|   Hoisted	 |   Binds this   |
+  +---------+-------------------------+-------------+-----------+------------+----------------+
+  |  var	| global/function scope	  |   Yes	    |  Yes	    |   Yes	     |     Yes        |
+  |  let    |  blocked scope	      |    No       |  Yes	    |   No	     |      No        |
+  |  const	|  blocked scope	      |    No       |   No	    |   No	     |      No        |
+  +---------+-------------------------+-------------+-----------+------------+----------------+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------

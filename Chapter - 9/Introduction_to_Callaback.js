@@ -139,10 +139,10 @@ function loadScript(src , callback){
 }
 
 Morning = (src) =>{
-    console.log("script length is :- " + src);
+    console.log("script length is :- " + src.length);
 }
 
 loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js", Morning)
 
 // Console:-  script loaded :-https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
-//            script length is :- https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
+//            script length is :- 76

@@ -29,6 +29,6 @@ var VS let VS const :-
 
 3) const :- Block Scope
             Updation & Redeclaration both NOT possible
-             Must be initialize at the time of declaration else  Error Occurs
+            Must be initialize at the time of declaration else  Error Occurs
              
 -----------------------------------------------------------------------------------------------------------------------------------------------------

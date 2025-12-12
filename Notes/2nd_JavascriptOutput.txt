@@ -3,11 +3,15 @@
 Javascript can "display" data in Different Ways :-  
 
     1) Writing into an HTML Element, using        :-  innerHTML
+    1) Writing into an HTML Element, using        :-  innerText
     2) Writing into the HTML output, using        :-  document.write()     Use Only for Testing 
     3) Writing into an Alert Box, using           :-  window.alert()
     4) Writing into the browser console, using    :-  console.log()        For Debugging Purposes
     5) Printing Content of Current Window, using  :-  window.print()
     
+    Note :-  
+        a) Use innerHTML when you want to change an HTML element.
+        b) Use innerText when you want to change an text.
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 Note :-  
@@ -15,8 +19,8 @@ Note :-
     1) Using document.write() after an HTML document is loaded, will delete all existing HTML
     2) The document.write() method should only be used for testing.
     3) You can skip the window keyword :-  
-            - In JavaScript, the window object is the global scope object.
-            - This means that variables, properties, and methods by default belong to the window object.
-            - This also means that specifying the window keyword is optional.
+        - In JavaScript, the window object is the global scope object.
+        - This means that variables, properties, and methods by default belong to the window object.
+        - This also means that specifying the window keyword is optional.
 
 ----------------------------------------------------------------------------------------------------------------------------------------

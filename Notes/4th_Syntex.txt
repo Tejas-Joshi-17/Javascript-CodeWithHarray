@@ -1,5 +1,29 @@
 ----------------------------------------------------------------------------------------------------------------------------------------
 
+JavaScript Values :- 
+
+    The Javascript syntax defines two types of values :- 
+        a) Fixed Value
+        b) Variable Value
+
+    - Fixed values are called Literals
+    - Variable values are called Variables.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+1) Javascript Literals :-  
+    1. Numbers are written with or without decimals:                 10.50, 1001
+    2. Strings are text, written within double or single quotes:     "John Doe", 'John Doe'
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+2) JavaScript Variables :-  
+        variables are used to store data values.
+        JavaScript uses the keywords var, let and const to declare variables.
+        An equal sign is used to assign values to variables.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
 JavaScript Identifiers / Names :-  
 
     1) Identifiers are used to name variables and keywords, and functions.
@@ -16,6 +40,7 @@ Note :-
 
     1) All JavaScript Identifiers are Case-Sensitive.
         - The variables lastName and lastname, are two different variables:
+        E.X. :-  let x & let X are different
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 

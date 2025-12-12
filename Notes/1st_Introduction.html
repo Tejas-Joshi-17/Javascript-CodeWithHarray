@@ -10,7 +10,7 @@
 <body>
 
     <h2 id="htmlContent">Javascript can change HTML content</h2>
-    <button onclick="changeHTMLContent()">Change HTML Content</button>
+    <button onclick="changeHTMLContent(this)">Change HTML Content</button>
 
     <h2 id="htmlAttribute">Javascript can change HTML Attribute Value</h2>
     <button onclick="turnBulbOn()">Turn on the On</button>
@@ -31,10 +31,21 @@
 
         let turnBulbOff = () => bulb.src = `https://www.w3schools.com/js/pic_bulboff.gif`
 
-        let changeHTMLElement = () =>
-            htmlElement.style.fontSize === `20px` ? htmlElement.style.fontSize = `35px` : htmlElement.style.fontSize = `20px`
+        let changeHTMLElement = () => {
+            if (htmlElement.style.fontSize === '20px') {
+                htmlElement.style.fontSize = '35px';
+            } else {
+                htmlElement.style.fontSize = '20px';
+            }
+        }
 
-        let hideHTMLElement = () => hideHtmlElement.style.display === `none` ? hideHtmlElement.style.display = `block` : hideHtmlElement.style.display = `none`   
+        let hideHTMLElement = () => {
+            if (hideHtmlElement.style.display === 'none') {
+                hideHtmlElement.style.display = `block`
+            } else {
+                hideHtmlElement.style.display = `none` 
+            }
+        }
     </script>
     
 </body>

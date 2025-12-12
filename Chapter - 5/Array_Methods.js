@@ -16,7 +16,7 @@ console.log(`${a} ${typeof a}`)  // 1,true,,,Tejas  string
 
 let Game = [1,"Tejas",true,false,99]
 let b = Game.join("-")
-console.log(b + " " + typeof b)  // 1-Tejas-true-false-99   string
+console.log(`${b} ${typeof b}`);  // 1-Tejas-true-false-99   string
 
 
 
@@ -33,17 +33,17 @@ console.log(b + " " + typeof b)  // 1-Tejas-true-false-99   string
 //                  <<-- Returns the poped value
 
 let arr = [1,"Tejas",true,false,99]
-console.log("Length of array Before :- " + arr.length);
+console.log(`Length of array Before :- ${arr.length}`);
 // Length of array Before :- 5
 
 let c = arr.pop();
-console.log(c + " is Removes from array")
+console.log(`${c} is Removes from array`)
 // 99 is Removes from array
 
-console.log("Length of array After :- " + arr.length);
+console.log(`Length of array After :- ${arr.length}`);
 // Length of array After :- 4
 
-console.log(c + " " + typeof c)  // 99  number
+console.log(`${c} ${typeof c}`)  // 99  number
 
 
 
@@ -78,17 +78,17 @@ console.log(d + " " + typeof d)  // 6  number
 //                  <<-- Returns the Removed element
 
 let pee = [1,"Tejas",true,false,99]
-console.log("Length of array Before :- " + pee.length);
+console.log(`Length of array Before :- ${pee.length}`);
 // Length of array Before :- 5
 
 let f = pee.shift();      // f = 1
-console.log(f + " is Removes from array")
+console.log(`${f} is Removes from array`)
 // 1 is Removes from array
 
-console.log("Length of array After :- " + pee.length);
+console.log(`Length of array After :- ${pee.length}`);
 // Length of array After :- 4
 
-console.log(f + " " + typeof f)  // 1  number
+console.log(`${f} ${typeof f}`)  // 1  number
 
 
 
@@ -103,15 +103,15 @@ console.log(f + " " + typeof f)  // 1  number
 //                    <<-- Returns new Array length
 
 let drr = [1,"Tejas",true,false,99]
-console.log("Length of array Before :- " + drr.length);
+console.log(`Length of array Before :- ${drr.length}`);
 // Length of array Before :- 5
 
 let e = drr.unshift(true);      // e = 6
 
-console.log("Length of array After :- " + e);
+console.log(`Length of array After :- ${e}`);
 // Length of array After :- 6
 
-console.log(e + " " + typeof e)  // 6  number
+console.log(`${e} ${typeof e}`)  // 6  number
 
 
 
@@ -129,7 +129,7 @@ console.log(e + " " + typeof e)  // 6  number
 //                   <<-- length of the Array not changes
 
 let kee = [1,"Tejas",true,false,99]
-console.log("Length of array Before :- " + kee.length);
+console.log(`Length of array Before :- ${kee.length}`);
 console.log(kee)
 // Length of array Before :- 5
 // [ 1, 'Tejas', true, false, 99 ]

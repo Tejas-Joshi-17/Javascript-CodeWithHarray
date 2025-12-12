@@ -32,6 +32,7 @@ console.log(a);         // Joshi
 var t = 45;
 console.log(t);                 // 45
 {
+    console.log(t);             // 45
     var t = "Tejas Joshi";      // <--- Global Scoped
     console.log(t);             // Tejas Joshi
 }
@@ -68,6 +69,7 @@ console.log(w);                 // 23
 let y = 456;
 console.log(y);                 // 456
 {
+    // console.log(y);          // <--- ReferenceError: Cannot access 'y' before initialization
     let y = 23;                 // <--- Blocked Scope
     console.log(y);             // 23
 }
@@ -75,7 +77,7 @@ console.log(y);                 // 456
 
 
 
-let m ;
+let m;
 console.log(m);                 // undefined
 
 
@@ -107,6 +109,7 @@ console.log(r);             // 456
 const s = 456;
 console.log(s);             // 456
 {
+    // console.log(s);      // <--- ReferenceError: Cannot access 's' before initialization
     const s = 23;           // <--- Blocked Scope that's why possible
     console.log(s);         // 23
 }

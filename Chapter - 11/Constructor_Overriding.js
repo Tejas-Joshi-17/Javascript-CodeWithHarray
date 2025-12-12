@@ -4,41 +4,39 @@
 // 2) Must call super constructor in derived class before accessing 'this' or returning from derived constructor
 
 
-class Parent_1{
+class Parent1{
     constructor(){
-        this.Name = "Tejas Joshi"
-        this.Age = 21
-        this.Email = "tejas.22010508@viit.ac.in"
+        this.name = "Tejas Joshi"
+        this.age = 21
+        this.email = "tejas.22010508@viit.ac.in"
     }
 
     getName(){
-        return this.Name
+        return this.name
     }
 
     getAge(){
-        return this.Age
+        return this.age
     }
 
     getEmail(){
-        return this.Email
+        return this.email
     }
 }
 
-class Child_1 extends Parent_1{
+class Child1 extends Parent1{
 
 }
 
-let Par_1 = new Parent_1()
-console.log("Name is :- " + Par_1.getName())         // Name is :- Tejas Joshi
-console.log("Age is :- " + Par_1.getAge())           // Age is :- 21
-console.log("Eamil is :- " + Par_1.getEmail())       // Email is :- tejas.22010508@viit.ac.in
+let parent1 = new Parent1()
+console.log("Name is :- " + parent1.getName())               // Name is :- Tejas Joshi
+console.log(`Age is :- ${parent1.getAge}`)                   // Age is :- 21
+console.log(`Eamil is :- ${parent1.getEmail}`)               // Email is :- tejas.22010508@viit.ac.in
 
-let Chi_1 = new Child_1()
-console.log("Name is :- " + Chi_1.getName())         // Name is :- Tejas Joshi
-console.log("Age is :- " + Chi_1.getAge())           // Age is :- 21
-console.log("Email is :- " + Chi_1.getEmail())       // Email is :- tejas.22010508@viit.ac.in
-
-
+let child1 = new Child1()
+console.log(`Name is :- ${child1.getName}`)                  // Name is :- Tejas Joshi
+console.log("Age is :- " + child1.getAge())                  // Age is :- 21
+console.log("Email is :- " + Chchild1i_1.getEmail())         // Email is :- tejas.22010508@viit.ac.in
 
 
 
@@ -48,7 +46,9 @@ console.log("Email is :- " + Chi_1.getEmail())       // Email is :- tejas.220105
 
 
 
-class Parent_2{
+
+
+class Parent2{
     constructor(){
         console.log("This is Parent Class Constructor")
     }
@@ -66,7 +66,7 @@ class Parent_2{
     }
 }
 
-class Child_2 extends Parent_2{
+class Child2 extends Parent2{
 
     constructor(){
         super()
@@ -75,10 +75,10 @@ class Child_2 extends Parent_2{
 
 }
 
-let Par_2 = new Parent_2()
+let parent2 = new Parent2()
 // This is Parent Class Constructor
 
-let Chi_2 = new Child_2()
+let child2 = new Child2()
 // This is Parent Class Constructor
 // This is Child Class Constructor
 
@@ -92,25 +92,25 @@ let Chi_2 = new Child_2()
 
 
 
-class Parent_3{
+class Parent3{
     constructor(){
         console.log("This is Parent Class Constructor")
     }
 
     getName(){
-        return this.Name
+        return this.name
     }
 
     getAge(){
-        return this.Age
+        return this.age
     }
 
     getEmail(){
-        return this.Email
+        return this.email
     }
 }
 
-class Child_3 extends Parent_3{
+class Child3 extends Parent3{
 
     constructor(){
         console.log("This is Child Class Constructor")
@@ -119,10 +119,10 @@ class Child_3 extends Parent_3{
 
 }
 
-let Par_3 = new Parent_3()
+let parent3 = new Parent3()
 // This is Parent Class Constructor
 
-let Chi_3 = new Child_3()
+let child3 = new Child3()
 // This is Child Class Constructor
 // This is Parent Class Constructor
 
@@ -137,38 +137,38 @@ let Chi_3 = new Child_3()
 
 
 
-class Parent_4{
+class Parent4{
     constructor(){
         console.log("This is Parent Class Constructor")
     }
 
     getName(){
-        return this.Name
+        return this.name
     }
 
     getAge(){
-        return this.Age
+        return this.age
     }
 
     getEmail(){
-        return this.Email
+        return this.email
     }
 }
 
-class Child_4 extends Parent_4{
+class Child4 extends Parent4{
 
     constructor(){
         super()
-        this.Name = "Tejas Joshi"
-        console.log("Class constructor is :- " + this.Name)
+        this.name = "Tejas Joshi"
+        console.log(`Class constructor is :- ${this.name}`)
         // super()                      // <----- Error Must call super constructor in derived class before accessing 'this' or returning from derived constructor
     }
 
 }
 
-let Par_4 = new Parent_4()
+let parent4 = new Parent4()
 // This is Parent Class Constructor
 
-let Chi_4 = new Child_4()
+let child4 = new Child4()
 // This is Parent Class Constructor
 // Class constructor is :- Tejas Joshi

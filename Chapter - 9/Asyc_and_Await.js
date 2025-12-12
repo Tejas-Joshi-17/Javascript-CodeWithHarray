@@ -7,7 +7,14 @@
 
 
 let Apple = async () =>{
-    return 7;              
+    let P2 = new Promise((resolve, reject) =>{
+        setTimeout(() => {
+            console.log("Promise-2 is Resolved")
+
+            reject("No")
+        }, 10000);
+    })
+    return P2;
 }
 
 Apple().then((value) => {

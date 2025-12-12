@@ -16,28 +16,35 @@
 <body>
 
     <!-- using innerHTML Attribute -->
-    <p id="usingInnerHTML"></p>
+    <button id="usingInnerHTML" onclick="usingInnerHtml(this)">innerHTML</button>
+
+    <!-- using innerText Attribute -->
+    <button id="usingInnerText" onclick="usingInnerText(this)">innerText</button>
 
     <!-- using document.write() Method -->
     <p id="usingDocumentWrite"></p>
     <button onclick="usingWriteMethod()">Showing Javascript Output using document.write()</button>
 
-    <!-- using window.write() Method -->
+    <!-- using window.alert() Method -->
     <button onclick="usingAlert()">Showing Javascript Output using window.alert()</button>
 
     <!-- using console.log() Method -->
     <button onclick="usingConsoleLog()">Showing Javascript Output using console.log()</button>
 
-    <!-- using console.log() Method -->
+    <!-- using window.print() Method -->
     <button onclick="printCurrentWindow()">Printing Content of Current Window</button>
 
     <script>
-        usingInnerHTML.innerHTML = `Showing Javascript using innerHTML`
+        let usingInnerHtml = (element) => element.innerHTML = `<p>Showing Javascript using innerHTML</p>`
+ 
         document.write(`Showing Javascript using document.write()`)
+
+        let usingInnerText = (element) => element.innerText = "Showing Javascript using innerText"
         let usingWriteMethod = () => document.write(`2 + 3 = 5`)
         let usingAlert = () => window.alert(`2 + 3 = 5`)
         let usingConsoleLog = () => console.log(`Showing Output Using console.log()`)
         let printCurrentWindow = () => window.print()
+
     </script>
 </body>
 

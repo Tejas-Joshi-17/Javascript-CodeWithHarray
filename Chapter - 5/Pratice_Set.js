@@ -16,10 +16,6 @@ arr.push(num)
 
 
 
-
-
-
-
 // 2) Keep adding numbers to the array util user entered 0
 
 let crr = [1,2,3,4]
@@ -87,7 +83,7 @@ console.log(ans)        // [ 40, -30, 100, 60, 20 ]
 
 let err = [12,40,2,-4,-30,100,60,20]
 let frr = err.map((value) =>{
-        return value*value
+   return value*value
 })
 
 console.log(err)        // [ 12, 40, 2, -4, -30, 100, 60, 20 ]
@@ -107,16 +103,19 @@ let zee = [1,2,3,4,5,6]
 
 let fact = zee.reduce((h1,h2) =>{
         return h1*h2
-})
+}, 0)
 
 console.log("Factorial of " + zee.length + " is :- " + fact)                    // Factorial of 6 is :- 720
 
 
 
-let Calculate_Factorial = (h1,h2) =>{
-        return h1*h2
+let calculateFactorial = (h1,h2) =>{
+     return h1*h2
 }
-let Factorial = zee.reduce(Calculate_Factorial)
+
+let Factorial = zee.reduce(calculateFactorial, 0)
 
 
 console.log("Factorial of " + zee.length + " is :- " + Factorial)               // Factorial of 6 is :- 720
+
+let x = 10;

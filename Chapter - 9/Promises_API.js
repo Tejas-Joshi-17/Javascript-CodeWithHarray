@@ -88,6 +88,8 @@ let P_33 = new Promise((resolve, reject) =>{
     }, 7000);
 })
 
+let sadsa_dasdas;
+
 let promise_all_2 = Promise.all([P_11, P_22, P_33])
 promise_all_2.then((value) =>{
     console.log(value)
