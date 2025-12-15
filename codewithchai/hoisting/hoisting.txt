@@ -1,0 +1,23 @@
+
+Hoisting :-t
+
+    1) Hoisting is a JavaScript mechanism where variables and function declarations are moved 
+        to the top of their containing scope during the compile phase. 
+    2) This means you can use variables before they are declared.
+
+
+1) var :- 
+
+    - Variables declared with var are hoisted to the top of their function or global scope and initialized with undefined. 
+            This means you can access them before their declaration without causing an error, 
+    - but they will have the value undefined until the assignment is reached.
+
+    console.log(a); // Output: undefined
+    var a = 5;
+
+let & const :- Variables declared with let and const are also hoisted to the top of their block scope, but they are not initialized. This means that if you try to access them before their declaration, it will result in a ReferenceError.
+example :-
+console.log(b); // ReferenceError: Cannot access 'b' before initialization
+let b = 10;
+In this example, trying to log b before its declaration results in a ReferenceError because let does not initialize the variable during hoisting.   
+-----------------------------------------------------------------------------------------------------------------------------------------------------

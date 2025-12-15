@@ -1,0 +1,32 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+var VS let VS const :-  
+
+1) var :-   Global Scope.
+            Updation & Redeclaration both possible.
+            By-default initalize with "undefined".
+
+2) let :-   Block Scope.
+            Updation possible but Redeclaration not possible.
+            By-default initalize with "undefined".
+
+3) const :- Block Scope
+            Updation & Redeclaration both NOT possible
+            Must be initialize at the time of declaration else  Error Occurs
+             
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hoisting :- Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compile phase. This means you can use variables before they are declared.
+
+var :- Variables declared with var are hoisted to the top of their function or global scope and initialized with undefined. This means you can access them before their declaration without causing an error, but they will have the value undefined until the assignment is reached.
+example :-
+console.log(a); // Output: undefined
+var a = 5;
+In this example, the declaration of a is hoisted to the top, but its assignment (a = 5) is not. Therefore, when we log a before the assignment, it outputs undefined.
+
+let & const :- Variables declared with let and const are also hoisted to the top of their block scope, but they are not initialized. This means that if you try to access them before their declaration, it will result in a ReferenceError.
+example :-
+console.log(b); // ReferenceError: Cannot access 'b' before initialization
+let b = 10;
+In this example, trying to log b before its declaration results in a ReferenceError because let does not initialize the variable during hoisting.   
+-----------------------------------------------------------------------------------------------------------------------------------------------------   
