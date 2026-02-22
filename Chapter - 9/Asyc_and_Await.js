@@ -22,7 +22,7 @@ Apple().then((value) => {
 }).catch((error) =>{
     console.log(`Apple Function rejected with error :- ${error}`)
 })
-// Apple Function resolve with value :- 7
+// Apple Function resolve with value :- No
 
 
 // ---------------------------------------------------------------------------------------------------------------------------

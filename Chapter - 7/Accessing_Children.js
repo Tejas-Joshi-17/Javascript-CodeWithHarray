@@ -1,35 +1,35 @@
-document.body
+console.log(document.body);
 // <body> ...... </body>
 
-document.body.childNodes
+console.log(document.body.childNodes);
 // NodeList(9) [text, div, text, script, text, comment, text, script, text]
 
-document.body.childNodes[0]
+console.log(document.body.childNodes[0]);
 // #text
 
-document.body.childNodes[1]
+console.log(document.body.childNodes[1]);
 /* <div> ...... </div> */
 
-typeof document.body.childNodes
+console.log(typeof document.body.childNodes);
 // object
 
 let arr = Array.from(document.body.childNodes)
 // undefined
 
-arr
+console.log(arr);
 // (9) [text, div, text, script, text, comment, text, script, text]
 
-arr[0]
+console.log(arr[0]);
 // #text
 
-arr[1]
+console.log(arr[1]);
 /* <div> ...... </div> */
 
 let brr = Array.from(arr[1].childNodes)
 // (5) [text, p, text, span, text]
 
-brr[1]
+console.log(brr[1]);
 // <p>This is me and I am Great</p>
 
-brr[1].textContent
+console.log(brr[1].textContent);
 // 'This is me and I am Great'
